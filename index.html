@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+            padding: 20px; /* Padding for smaller screens */
+        }
+
+        .container {
+            background: #f4e1d2; /* Soft, warm beige */
+            padding: 40px; /* Reduced padding for better responsiveness */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Limits the width on larger screens */
+            width: 100%; /* Makes the container responsive */
+        }
+
+        h1 {
+            color: #8b5a2b; /* Vintage brown */
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #6b705c; /* Muted greenish-grey */
+            margin-bottom: 20px;
+        }
+
+        .sorry-btn {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fefae0; /* Off-white */
+            background-color: #d4a373; /* Soft, warm tan */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .sorry-btn:hover {
+            background-color: #c08457; /* Darker vintage tan */
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(192, 132, 87, 0.4); /* Soft shadow */
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #bc6c25; /* Earthy orange-brown */
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Smaller heading size */
+            }
+
+            p {
+                font-size: 1em; /* Slightly smaller text */
+            }
+
+            .sorry-btn {
+                font-size: 1em; /* Adjust button font size */
+            }
+
+            .message {
+                font-size: 1.2em; /* Adjust message size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px; /* Further reduce padding on small screens */
+            }
+
+            h1 {
+                font-size: 1.8em; /* Further reduce heading size */
+            }
+
+            p {
+                font-size: 0.9em; /* Adjust text size */
+            }
+
+            .sorry-btn {
+                font-size: 0.9em; /* Adjust button font size */
+                padding: 8px 15px; /* Smaller padding for the button */
+            }
+
+            .message {
+                font-size: 1em; /* Further adjust message size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sorry meri jan</h1>
+    <p>Please man jao please please please.</p>
+    <button class="sorry-btn" onclick="showMessage()">Click here for a hug 🤗</button>
+    <div class="message" id="message">Sending you a big virtual hug! 🤗 💙</div>
+</div>
+
+<script>
+    function showMessage() {
+        const message = document.getElementById('message');
+        message.style.opacity = 1;
+    }
+</script>
+
+</body>
+</html>
